@@ -27,3 +27,8 @@ body.on-video .cur-o{opacity:0}
 body.on-video .cur-text{opacity:1}
 body.on-link .cur{width:16px;height:16px;background:var(--ink)}
 body.on-link .cur-o{border-color:rgba(43,43,46,.3)}
+
+@media(hover:none),(pointer:coarse){
+  .cur,.cur-o,.cur-text{display:none!important}
+  *{cursor:auto!important}
+}

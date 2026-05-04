@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 
 export function initCursor() {
+  if (window.matchMedia('(hover:none),(pointer:coarse)').matches) return;
   const cur = document.getElementById('cur');
   const curO = document.getElementById('curO');
   const curTxt = document.getElementById('curText');

@@ -1,11 +1,13 @@
+/* ================================ TABLET ≤1024 ================================ */
 @media(max-width:1024px){
   nav{padding:20px 28px}
   nav.stuck{padding:14px 28px}
   .nlinks{display:none}
+  .nav-burger{display:block}
   .wrap,.bv-inner,.cta-inner{padding-left:28px;padding-right:28px}
   .hv-content{padding:0 28px}
   .hv-scroll{left:28px}
-  .hv-h1{font-size:clamp(44px,10vw,72px)}
+  .hv-h1{font-size:clamp(44px,8vw,72px)}
   .hsrv-inhead{grid-template-columns:1fr;gap:10px;padding:24px 28px 16px}
   .hero{grid-template-columns:1fr;padding-top:0}
   .hero-left{padding:60px 28px}
@@ -20,4 +22,60 @@
   .proc-inner{grid-template-columns:1fr;gap:12px}
   .fg{grid-template-columns:1fr 1fr;gap:36px}
   .bv-inner{grid-template-columns:1fr}
+}
+
+/* ================================ MOBILE ≤640 ================================ */
+@media(max-width:640px){
+  nav{padding:18px 20px}
+  nav.stuck{padding:12px 20px}
+  .nwm{font-size:14px}
+  .ntag{font-size:8px}
+
+  .wrap,.bv-inner,.cta-inner,.hv-content,.hero-left{padding-left:20px;padding-right:20px}
+  .hv-scroll{left:20px;bottom:24px}
+
+  /* Hero video */
+  .hv-sec{min-height:520px}
+  .hv-h1{font-size:clamp(38px,11vw,54px);line-height:1.02;letter-spacing:-.04em}
+  .hv-h1 br{display:none}
+  .hv-sub{font-size:16px;margin-bottom:32px}
+  .hv-btns{flex-wrap:wrap;justify-content:center;gap:10px;width:100%}
+  .hv-btns .btn-teal,.hv-btns .btn-ghost{width:100%;justify-content:center}
+  .hv-tag{font-size:9px;margin-bottom:20px}
+
+  /* Hero split */
+  .hero-left{padding:80px 20px 48px}
+  .hero-h1{font-size:clamp(38px,10vw,52px);line-height:1.02}
+  .hero-h1 br{display:none}
+  .hero-sub{font-size:15px}
+  .hero-btns{flex-wrap:wrap;gap:10px}
+  .hero-btns .btn-dark,.hero-btns .btn-outline{width:100%;justify-content:center;text-align:center}
+  .hero-right{height:65vw;min-height:260px}
+  .hero-badge,.hero-badge2{transform:scale(.78);transform-origin:top left}
+  .hero-badge2{transform-origin:bottom right}
+
+  /* Stats — 1 column on tiny screens, 2 on small mobile */
+  .stats-grid{grid-template-columns:1fr;gap:12px}
+
+  /* Process steps stacked */
+  .proc-inner{gap:10px}
+
+  /* Footer */
+  .fg{grid-template-columns:1fr;gap:28px}
+
+  /* Generic section padding */
+  section{padding-left:0;padding-right:0}
+
+  /* Video showcase headline */
+  .vs-content h2{font-size:clamp(32px,9vw,48px)!important}
+
+  /* CTA */
+  .cta-inner h2{font-size:clamp(34px,9vw,52px)}
+}
+
+/* ================================ TINY ≤380 ================================ */
+@media(max-width:380px){
+  nav{padding:16px 14px}
+  .wrap,.bv-inner,.cta-inner,.hv-content,.hero-left{padding-left:14px;padding-right:14px}
+  .hv-h1,.hero-h1{font-size:34px}
 }
