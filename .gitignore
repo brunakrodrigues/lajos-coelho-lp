@@ -8,3 +8,4 @@ dist
 
 # Uncompressed originals (kept locally as backup)
 .video-originals/
+public/assets/videos/_orig/
