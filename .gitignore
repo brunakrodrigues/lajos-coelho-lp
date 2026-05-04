@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+.vite
+
+# Heavy video assets — keep local only
+public/assets/videos/*.mp4
+
+# Uncompressed originals (kept locally as backup)
+.video-originals/

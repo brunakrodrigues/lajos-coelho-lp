@@ -1,0 +1,14 @@
+footer{background:#070C0E;padding:64px 0 40px;border-top:1px solid rgba(255,255,255,.04)}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:52px;margin-bottom:52px}
+.fwm{font-size:17px;font-weight:600;letter-spacing:-.02em;color:#fff;margin-bottom:3px}
+.fwm .amp{color:var(--teal);font-weight:300}
+.ftag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}
+.fp{font-size:13px;line-height:1.7;color:rgba(255,255,255,.28);max-width:280px}
+.fc h4{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:16px}
+.fc ul{list-style:none;display:grid;gap:10px}
+.fc a{font-size:13.5px;color:rgba(255,255,255,.32);transition:color .25s}
+.fc a:hover{color:rgba(255,255,255,.72)}
+.fb{padding-top:28px;border-top:1px solid rgba(255,255,255,.05);display:flex;align-items:center;justify-content:space-between}
+.fcopy{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.2)}
+.fstatus{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(255,255,255,.2);letter-spacing:.06em}
+.fstatus::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2.2s infinite}

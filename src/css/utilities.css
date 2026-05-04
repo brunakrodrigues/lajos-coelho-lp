@@ -1,0 +1,64 @@
+.wrap{max-width:1200px;margin:0 auto;padding:0 60px}
+.sp{padding:88px 0}
+.sp-sm{padding:64px 0}
+
+.sl{
+  display:flex;align-items:center;gap:12px;
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--teal);
+  margin-bottom:18px;
+  clip-path:inset(0 100% 0 0);
+}
+.sl::before{content:'';width:20px;height:1px;background:var(--teal)}
+.sh{
+  font-size:clamp(36px,4vw,56px);font-weight:800;
+  letter-spacing:-.035em;line-height:1.06;margin-bottom:16px;
+  overflow:hidden;
+}
+.sh .line{display:block;transform:translateY(110%)}
+.ssb{font-size:17px;line-height:1.7;color:var(--muted);max-width:480px}
+
+.btn-dark{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:15px 34px;border-radius:10px;
+  background:var(--ink);color:#fff;
+  font-size:14px;font-weight:500;letter-spacing:-.01em;
+  transition:background .2s,transform .25s,box-shadow .25s;
+  position:relative;overflow:hidden;
+}
+.btn-dark::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(88,195,181,.2),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.btn-dark:hover::before{opacity:1}
+.btn-dark:hover{background:#1e2628;transform:translateY(-2px);box-shadow:0 20px 50px -16px rgba(43,43,46,.4)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:15px 28px;border-radius:10px;
+  border:1px solid var(--line);color:var(--muted);
+  font-size:14px;font-weight:400;
+  transition:border-color .25s,color .25s,background .25s;
+}
+.btn-outline:hover{border-color:var(--teal);color:var(--ink);background:rgba(88,195,181,.06)}
+.btn-teal{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:16px 34px;border-radius:10px;
+  background:var(--teal);color:#fff;
+  font-size:14px;font-weight:500;letter-spacing:-.01em;
+  transition:background .2s,transform .25s,box-shadow .25s;
+}
+.btn-teal:hover{background:#45B0A2;transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(88,195,181,.45)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:16px 28px;border-radius:10px;
+  border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.65);
+  font-size:14px;font-weight:400;
+  transition:border-color .25s,color .25s,background .25s;
+}
+.btn-ghost:hover{border-color:var(--teal);color:#fff;background:rgba(88,195,181,.08)}
+
+.mag{display:inline-block;position:relative}
+.tilt{transform-style:preserve-3d;transform:perspective(1000px)}
+
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}

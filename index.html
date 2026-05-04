@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lajos &amp; Coelho — Gestão e Serviços</title>
+<link rel="preload" as="image" href="/assets/videos/hero-bg.jpg" fetchpriority="high"/>
+<link rel="preload" as="video" href="/assets/videos/hero-bg.mp4" type="video/mp4"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/></noscript>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cur" id="cur"></div>
+<div class="cur-o" id="curO"></div>
+<div class="cur-text" id="curText">Assistir</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nlogo">
+    <svg width="34" height="34" viewBox="0 0 64 64" fill="none">
+      <defs><linearGradient id="ng" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#58C3B5"/><stop offset="100%" stop-color="#8BD5F0"/>
+      </linearGradient></defs>
+      <path d="M14 4L60 4L60 18L28 18Q18 18 18 28L18 60L4 60L4 14Q4 4 14 4Z" fill="url(#ng)"/>
+      <path d="M60 60L24 60L24 46L46 46L46 24L60 24Z" fill="url(#ng)" opacity=".55"/>
+      <circle cx="53" cy="11" r="3.2" fill="#55F28C"><animate attributeName="opacity" values="1;.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    </svg>
+    <div>
+      <div class="nwm">Lajos<span class="amp">&amp;</span>Coelho</div>
+      <div class="ntag">Gestão e Serviços</div>
+    </div>
+  </a>
+  <ul class="nlinks">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Soluções</a></li>
+    <li><a href="#processo">Processo</a></li>
+    <li><a href="#contato" class="nbtn mag">Fale Conosco</a></li>
+  </ul>
+</nav>
+
+<!-- HERO VIDEO -->
+<section class="hv-sec" id="top">
+  <video class="hv-vid" id="hvVid" autoplay muted loop playsinline preload="auto" poster="/assets/videos/hero-bg.jpg">
+    <source src="/assets/videos/hero-bg.mp4" type="video/mp4"/>
+  </video>
+  <div class="hv-overlay"></div>
+  <div class="hv-content">
+    <div class="hv-tag">
+      <div class="ht-dot"></div>
+      Gestão · Tecnologia · Excelência
+    </div>
+    <h1 class="hv-h1" id="hvh1">
+      Gestão que<br><span class="teal">transforma.</span><br>Resultados que<br>duram.
+    </h1>
+    <p class="hv-sub" id="hvsub">
+      Soluções estratégicas de gestão e serviços que elevam a performance organizacional com inteligência e precisão.
+    </p>
+    <div class="hv-btns" id="hvbtns">
+      <a href="#servicos" class="btn-teal mag">
+        Conheça nossas soluções
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#hero-split" class="btn-ghost">Quem somos</a>
+    </div>
+  </div>
+  <div class="hv-scroll" id="hvscroll">
+    <div class="hv-arrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+    Scroll
+  </div>
+</section>
+
+<!-- HERO SPLIT -->
+<section class="hero" id="hero-split">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-left">
+    <div class="hero-tag" id="htag">
+      <div class="ht-line"></div>
+      <div class="ht-dot"></div>
+      Sobre nós · 14 anos de experiência
+      <div class="ht-line"></div>
+    </div>
+
+    <h1 class="hero-h1" id="hh1">
+      Parceiros na<br>sua <span class="teal">gestão.</span><br>Do diagnóstico<br>ao resultado.
+    </h1>
+
+    <p class="hero-sub" id="hsub">
+      A Lajos &amp; Coelho atua como extensão estratégica da sua empresa — com método, comprometimento e precisão em cada etapa do processo.
+    </p>
+
+    <div class="hero-btns" id="hbtns">
+      <a href="#sobre" class="btn-dark mag">
+        Nossa história
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#servicos" class="btn-outline">Ver soluções</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-vid-wrap" id="heroVidWrap">
+      <video muted loop playsinline preload="none" poster="/assets/videos/hero-split.jpg" data-lazy-video>
+        <source src="/assets/videos/hero-split.mp4" type="video/mp4"/>
+      </video>
+      <div class="hero-vid-overlay"></div>
+    </div>
+
+    <div class="hero-badge" id="hbadge1">
+      <div class="hb-top">
+        <div class="hb-dot"></div>
+        <span class="hb-label">Clientes Ativos</span>
+      </div>
+      <div class="hb-val" data-count="200" data-suffix="+">0+</div>
+      <div class="hb-sub">empresas atendidas</div>
+    </div>
+
+    <div class="hero-badge2" id="hbadge2">
+      <div class="hb2-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="hb2-title">98% de aprovação</div>
+        <div class="hb2-sub">Taxa de satisfação</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" id="scue">
+    <span class="sc-txt">Scroll</span>
+    <div class="sc-bar"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ti"><div class="td t"></div>Gestão Estratégica</div>
+    <div class="ti"><div class="td g"></div>Qualidade de Vida</div>
+    <div class="ti"><div class="td s"></div>Transformação Digital</div>
+    <div class="ti"><div class="td t"></div>Excelência Operacional</div>
+    <div class="ti"><div class="td g"></div>Saúde Corporativa</div>
+    <div class="ti"><div class="td s"></div>Inteligência de Processos</div>
+    <div class="ti"><div class="td t"></div>Resultados Mensuráveis</div>
+    <div class="ti"><div class="td g"></div>Liderança &amp; Pessoas</div>
+    <div class="ti"><div class="td s"></div>Conformidade &amp; Qualidade</div>
+    <div class="ti"><div class="td t"></div>Gestão Estratégica</div>
+    <div class="ti"><div class="td g"></div>Qualidade de Vida</div>
+    <div class="ti"><div class="td s"></div>Transformação Digital</div>
+    <div class="ti"><div class="td t"></div>Excelência Operacional</div>
+    <div class="ti"><div class="td g"></div>Saúde Corporativa</div>
+    <div class="ti"><div class="td s"></div>Inteligência de Processos</div>
+    <div class="ti"><div class="td t"></div>Resultados Mensuráveis</div>
+    <div class="ti"><div class="td g"></div>Liderança &amp; Pessoas</div>
+    <div class="ti"><div class="td s"></div>Conformidade &amp; Qualidade</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about sp" id="sobre">
+  <div class="wrap">
+    <div class="about-inner">
+      <div class="about-text">
+        <div class="sl" id="sl-about">Sobre nós</div>
+        <p class="stmt" id="stmt-about">
+          Transformamos <em>complexidade</em> em clareza.<br>E clareza em <em>crescimento</em>.
+        </p>
+        <p class="about-p" id="ap1">
+          A Lajos &amp; Coelho nasce da convicção de que uma gestão bem estruturada é o motor por trás de qualquer organização de alto desempenho. Com expertise em processos, pessoas e tecnologia, entregamos soluções que duram.
+        </p>
+        <p class="about-p" id="ap2">
+          Do diagnóstico à implementação, nossa equipe atua como parceira estratégica — não apenas como prestadora de serviço. Cada projeto é tratado com a profundidade que o seu negócio merece.
+        </p>
+      </div>
+
+      <div>
+        <div class="about-vid-wrap" id="aboutVidWrap">
+          <video muted loop playsinline preload="none" poster="/assets/videos/about.jpg" data-lazy-video>
+            <source src="/assets/videos/about.mp4" type="video/mp4"/>
+          </video>
+          <div class="about-vid-label">
+            <div class="avl-tag">Nossa abordagem</div>
+            <div class="avl-text">Parceria real.<br>Da estratégia à execução.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats sp-sm">
+  <div class="wrap">
+    <div class="sl" id="sl-stats">Números que falam</div>
+    <div class="sh" id="sh-stats"><span class="line">Impacto em</span><span class="line">escala real.</span></div>
+    <div class="stats-grid">
+      <div class="stat" id="st1">
+        <div class="sval"><span class="cu" data-t="200">0</span><span class="ssuf">+</span></div>
+        <div class="slbl">Empresas atendidas<br>em todo o Brasil</div>
+      </div>
+      <div class="stat" id="st2">
+        <div class="sval"><span class="cu" data-t="14">0</span><span class="ssuf"> anos</span></div>
+        <div class="slbl">De experiência em<br>gestão estratégica</div>
+      </div>
+      <div class="stat" id="st3">
+        <div class="sval"><span class="cu" data-t="98">0</span><span class="ssuf">%</span></div>
+        <div class="slbl">Taxa de satisfação<br>dos nossos clientes</div>
+      </div>
+      <div class="stat" id="st4">
+        <div class="sval"><span class="cu" data-t="40">0</span><span class="ssuf">%</span></div>
+        <div class="slbl">Ganho médio em<br>eficiência operacional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT + CARDS -->
+<section class="ab2-sec sp">
+  <div class="wrap">
+    <div class="ab2-inner">
+      <div>
+        <div class="sl ab2-sl" id="sl-ab2">Nossa Abordagem</div>
+        <h2 class="ab2-stmt" id="ab2-stmt">
+          <span class="line">Não chegamos com</span>
+          <span class="line">respostas prontas.</span>
+          <span class="line">Chegamos para <em>entender</em></span>
+          <span class="line">e construir <em>juntos.</em></span>
+        </h2>
+        <p class="ab2-p" id="ab2p1">
+          Cada organização é única. Por isso, nosso ponto de partida é sempre a escuta ativa — imersão real no seu contexto, nos seus desafios e nas oportunidades que ainda não foram mapeadas.
+        </p>
+        <p class="ab2-p" id="ab2p2">
+          Da estratégia à execução, atuamos como parceiros genuínos. Não entregamos relatórios e saímos — ficamos até o resultado acontecer de verdade.
+        </p>
+      </div>
+
+      <div class="ab2-cards">
+        <div class="ab2-card" id="ab2c1">
+          <div class="ab2-dot">Eficiência</div>
+          <div class="ab2-num">40%</div>
+          <div class="ab2-lbl">ganho médio em eficiência<br>operacional por cliente</div>
+        </div>
+        <div class="ab2-card" id="ab2c2">
+          <div class="ab2-dot">Acompanhamento</div>
+          <div class="ab2-num">100%</div>
+          <div class="ab2-lbl">dos projetos com presença<br>ativa durante toda execução</div>
+        </div>
+        <div class="ab2-card" id="ab2c3">
+          <div class="ab2-dot">Agilidade</div>
+          <div class="ab2-num">3 sem.</div>
+          <div class="ab2-lbl">da imersão ao plano<br>de ação estruturado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSÃO · VISÃO · VALORES -->
+<section class="mvv-sec sp" id="mvv">
+  <div class="wrap">
+    <div class="mvv-header">
+      <div class="sl" id="sl-mvv">Nossa Essência</div>
+      <h2 class="sh" id="sh-mvv">
+        <span class="line">O que nos move</span>
+        <span class="line">e nos orienta.</span>
+      </h2>
+      <p class="mvv-header-sub">Somos pessoas comprometidas com pessoas. Nosso trabalho tem propósito, método e coração.</p>
+    </div>
+
+    <div class="mvv-grid">
+
+      <div class="mvv-card" id="mvvc1">
+        <div class="mvv-left">
+          <div class="mvv-left-top">
+            <svg class="mvv-left-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2L8.5 8.5 2 9.27l4.5 4.38L5.18 20 12 16.54 18.82 20l-1.32-6.35L22 9.27l-6.5-.77L12 2z"/>
+            </svg>
+            <span class="mvv-left-num">01 · Missão</span>
+          </div>
+          <div class="mvv-left-title">Nossa<br>Missão.</div>
+        </div>
+        <div class="mvv-right">
+          <p class="mvv-quote">Realizar prestação de serviços com excelência, garantindo a credibilidade e confiança junto aos nossos clientes através da atualização, dinamismo, cordialidade e atendimento verdadeiramente diferenciado.</p>
+        </div>
+      </div>
+
+      <div class="mvv-card" id="mvvc2">
+        <div class="mvv-left">
+          <div class="mvv-left-top">
+            <svg class="mvv-left-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span class="mvv-left-num">02 · Visão</span>
+          </div>
+          <div class="mvv-left-title">Nossa<br>Visão.</div>
+        </div>
+        <div class="mvv-right">
+          <p class="mvv-quote">Ser reconhecida como uma empresa íntegra e sólida, valorizada pelo seu conteúdo e método diferenciados — dentro de cada ciclo da prestação de serviços que nos é confiado.</p>
+        </div>
+      </div>
+
+      <div class="mvv-card" id="mvvc3">
+        <div class="mvv-left">
+          <div class="mvv-left-top">
+            <svg class="mvv-left-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/>
+            </svg>
+            <span class="mvv-left-num" style="color:rgba(255,255,255,.4)">03 · Valores</span>
+          </div>
+          <div class="mvv-left-title">Nossa<br>Base.</div>
+        </div>
+        <div class="mvv-right">
+          <p class="mvv-vals-intro">Cada decisão que tomamos, cada projeto que assumimos, é guiado por estes cinco princípios.</p>
+          <div class="mvv-vals-row" id="mvvVals">
+            <span class="mvv-val-pill">Respeito</span>
+            <span class="mvv-val-pill">Destreza</span>
+            <span class="mvv-val-pill">Ética</span>
+            <span class="mvv-val-pill">Empatia</span>
+            <span class="mvv-val-pill">Confiança</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="hsrv-section" id="servicos">
+  <div class="hsrv-outer" id="hsrvOuter">
+    <div class="hsrv-sticky">
+      <div class="hsrv-inhead">
+        <div>
+          <div class="sl" id="sl-srv">Soluções</div>
+          <h2 class="hsrv-sh" id="sh-srv">O que fazemos por <span style="color:var(--teal)">você</span></h2>
+        </div>
+        <p class="ssb" id="ssb-srv">Um conjunto integrado de soluções desenhadas para elevar a gestão da sua organização ao próximo nível.</p>
+      </div>
+      <div class="hsrv-track" id="hsrvTrack">
+
+        <div class="srv-card tilt" id="sc1">
+          <div class="sc-num">01</div>
+          <div class="srv-icon-w">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="sc-name">Gestão Estratégica</div>
+          <div class="sc-desc">Diagnóstico, planejamento e execução de estratégias que geram resultado mensurável e sustentável para sua organização.</div>
+          <div class="sc-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+
+        <div class="srv-card tilt" id="sc2">
+          <div class="sc-num">02</div>
+          <div class="srv-icon-w">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="sc-name">Gestão de Pessoas</div>
+          <div class="sc-desc">Estruturação de processos de RH, cultura organizacional, treinamento e desenvolvimento de lideranças de alto impacto.</div>
+          <div class="sc-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+
+        <div class="srv-card tilt" id="sc3">
+          <div class="sc-num">03</div>
+          <div class="srv-icon-w">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="sc-name">Inteligência de Processos</div>
+          <div class="sc-desc">Mapeamento, otimização e automação de processos para eliminar desperdícios e aumentar a eficiência operacional real.</div>
+          <div class="sc-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+
+        <div class="srv-card tilt" id="sc4">
+          <div class="sc-num">04</div>
+          <div class="srv-icon-w">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="sc-name">Qualidade &amp; Conformidade</div>
+          <div class="sc-desc">Implementação de sistemas de qualidade, gestão de indicadores, compliance e certificações setoriais estratégicas.</div>
+          <div class="sc-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+
+        <div class="srv-card tilt" id="sc5">
+          <div class="sc-num">05</div>
+          <div class="srv-icon-w">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+          </div>
+          <div class="sc-name">Tecnologia &amp; Digital</div>
+          <div class="sc-desc">Transformação digital integrada: ferramentas, sistemas e automações que conectam dados, pessoas e resultados em tempo real.</div>
+          <div class="sc-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+
+        <div class="srv-card tilt" id="sc6">
+          <div class="sc-num">06</div>
+          <div class="srv-icon-w">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <div class="sc-name">Saúde Corporativa</div>
+          <div class="sc-desc">Programas de bem-estar, qualidade de vida no trabalho e estratégias de saúde ocupacional com impacto mensurável.</div>
+          <div class="sc-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+
+      </div>
+      <div class="hsrv-hint" id="hsrvHint">
+        <div class="hint-arrows"><span>›</span><span>›</span><span>›</span></div>
+        Arraste para ver mais
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SHOWCASE -->
+<div class="vid-showcase" id="vidShowcase">
+  <video class="vs-video" id="vsVid" muted loop playsinline preload="none" poster="/assets/videos/showcase.jpg" data-lazy-video>
+    <source src="/assets/videos/showcase.mp4" type="video/mp4"/>
+  </video>
+  <div class="vs-overlay"></div>
+  <div class="vs-content">
+    <div>
+      <span class="vs-tag" id="vstag">Nossa Visão</span>
+      <h2 class="sh" id="vsh" style="color:#fff;font-size:clamp(40px,5vw,72px)">
+        <span class="line">Não existe empresa de</span>
+        <span class="line" style="color:var(--teal)">alto desempenho</span>
+        <span class="line">sem gestão de precisão.</span>
+      </h2>
+    </div>
+  </div>
+</div>
+
+<!-- BRAND VIDEO -->
+<section class="brand-vid-sec" id="bvsec">
+  <div class="bv-inner">
+    <div>
+      <div class="sl" id="sl-bv">Nossa Identidade</div>
+      <h2 class="sh" id="sh-bv"><span class="line">Gestão com</span><span class="line">propósito e <span style="color:var(--teal)">precisão</span></span></h2>
+      <p style="font-size:15px;line-height:1.72;color:var(--muted);margin-top:16px;opacity:0;transform:translateY(18px)" id="bvp">
+        Na Lajos &amp; Coelho, cada detalhe importa. Da identidade ao método, tudo foi construído para refletir o compromisso com a excelência que levamos para cada cliente.
+      </p>
+      <div style="margin-top:32px;opacity:0;transform:translateY(16px)" id="bvbtn">
+        <a href="#contato" class="btn-dark mag">
+          Fale com a nossa equipe
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="bv-vid" id="bvVid">
+      <video muted loop playsinline preload="none" poster="/assets/videos/brand.jpg" data-lazy-video>
+        <source src="/assets/videos/brand.mp4" type="video/mp4"/>
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process sp" id="processo">
+  <div class="wrap">
+    <div class="sl" id="sl-proc">Como trabalhamos</div>
+    <h2 class="sh" id="sh-proc"><span class="line">Um método.</span><span class="line">Resultados garantidos.</span></h2>
+
+    <div class="proc-wrap" id="procWrap">
+      <div class="proc-line"></div>
+      <div class="proc-line-fill" id="procLineFill"></div>
+
+      <div class="proc-step" id="ps1">
+        <div class="ps-num-wrap"><div class="ps-num">01</div></div>
+        <div class="proc-inner">
+          <div class="ps-title">Diagnóstico Profundo</div>
+          <div>
+            <p class="ps-body">Começamos entendendo você de verdade — sua operação, sua cultura, seus gargalos e seu potencial. Nenhum template genérico. Cada diagnóstico é único e orientado ao seu contexto real.</p>
+            <span class="ps-tag">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              Imersão · 2–4 semanas
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proc-step" id="ps2">
+        <div class="ps-num-wrap"><div class="ps-num">02</div></div>
+        <div class="proc-inner">
+          <div class="ps-title">Estratégia Customizada</div>
+          <div>
+            <p class="ps-body">Com base no diagnóstico, construímos um plano de ação preciso, com prioridades claras, metas definidas e cronograma realista. Estratégia que serve à realidade — não ao oposto.</p>
+            <span class="ps-tag">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 19-9-9 19-2-8-8-2z"/></svg>
+              Planejamento · 1–2 semanas
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proc-step" id="ps3">
+        <div class="ps-num-wrap"><div class="ps-num">03</div></div>
+        <div class="proc-inner">
+          <div class="ps-title">Implementação Acompanhada</div>
+          <div>
+            <p class="ps-body">Não entregamos apenas relatórios. Ficamos ao lado da sua equipe durante toda a execução, com ajuste fino em tempo real. Do papel à prática, com você, do início ao fim.</p>
+            <span class="ps-tag">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Execução · contínua
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proc-step" id="ps4">
+        <div class="ps-num-wrap"><div class="ps-num">04</div></div>
+        <div class="proc-inner">
+          <div class="ps-title">Mensuração &amp; Evolução</div>
+          <div>
+            <p class="ps-body">Medimos tudo. Indicadores, resultados, impactos. Relatórios claros e objetivos para que você tome decisões com dados — e continue evoluindo sem depender de suposições.</p>
+            <span class="ps-tag">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Acompanhamento · permanente
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-sec sp-sm">
+  <div class="wrap partners-header">
+    <div class="sl" id="sl-partners">Parceiros</div>
+    <h2 class="sh" id="sh-partners">
+      <span class="line">Empresas que confiam</span>
+      <span class="line">na nossa <span style="color:var(--teal)">gestão</span></span>
+    </h2>
+  </div>
+
+  <div class="pt-marquee">
+    <div class="pt-track">
+      <div class="pt-item">Grupo Alfa<span class="pt-sep"></span></div>
+      <div class="pt-item">Beta Saúde<span class="pt-sep"></span></div>
+      <div class="pt-item">Conecta RH<span class="pt-sep"></span></div>
+      <div class="pt-item">Delta Corp.<span class="pt-sep"></span></div>
+      <div class="pt-item">Epsilon S/A<span class="pt-sep"></span></div>
+      <div class="pt-item">Forte Gestão<span class="pt-sep"></span></div>
+      <div class="pt-item">Gamma Partners<span class="pt-sep"></span></div>
+      <div class="pt-item">Horizonte Group<span class="pt-sep"></span></div>
+      <div class="pt-item">Integra Ltda.<span class="pt-sep"></span></div>
+      <div class="pt-item">Jota Consultoria<span class="pt-sep"></span></div>
+      <div class="pt-item">Grupo Alfa<span class="pt-sep"></span></div>
+      <div class="pt-item">Beta Saúde<span class="pt-sep"></span></div>
+      <div class="pt-item">Conecta RH<span class="pt-sep"></span></div>
+      <div class="pt-item">Delta Corp.<span class="pt-sep"></span></div>
+      <div class="pt-item">Epsilon S/A<span class="pt-sep"></span></div>
+      <div class="pt-item">Forte Gestão<span class="pt-sep"></span></div>
+      <div class="pt-item">Gamma Partners<span class="pt-sep"></span></div>
+      <div class="pt-item">Horizonte Group<span class="pt-sep"></span></div>
+      <div class="pt-item">Integra Ltda.<span class="pt-sep"></span></div>
+      <div class="pt-item">Jota Consultoria<span class="pt-sep"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec sp-sm" id="contato">
+  <img class="cta-bg-img" src="/assets/images/reuniao.jpg" alt="" aria-hidden="true"/>
+  <div class="cta-blob cta-blob-1"></div>
+  <div class="cta-blob cta-blob-2"></div>
+  <div class="cta-inner">
+    <h2 class="cta-sh" id="ctash">
+      <span class="line">Pronto para elevar</span>
+      <span class="line">a sua <span class="teal">gestão?</span></span>
+    </h2>
+    <p class="cta-sub" id="ctasub">
+      Vamos conversar sobre o seu negócio. Sem compromisso, sem pitch genérico — apenas uma conversa honesta sobre o que você precisa.
+    </p>
+    <div class="cta-btns" id="ctabtns">
+      <a href="mailto:contato@lajoscoelho.com.br" class="btn-teal mag">
+        Falar com um especialista
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#servicos" class="btn-ghost">Ver soluções</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+            <defs><linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#58C3B5"/><stop offset="100%" stop-color="#8BD5F0"/></linearGradient></defs>
+            <path d="M14 4L60 4L60 18L28 18Q18 18 18 28L18 60L4 60L4 14Q4 4 14 4Z" fill="url(#fg2)"/>
+            <path d="M60 60L24 60L24 46L46 46L46 24L60 24Z" fill="url(#fg2)" opacity=".55"/>
+            <circle cx="53" cy="11" r="3.2" fill="#55F28C"/>
+          </svg>
+          <div>
+            <div class="fwm">Lajos<span class="amp">&amp;</span>Coelho</div>
+            <div class="ftag">Gestão e Serviços</div>
+          </div>
+        </div>
+        <p class="fp">Soluções estratégicas de gestão que transformam organizações em máquinas de resultado com propósito.</p>
+      </div>
+      <div class="fc"><h4>Soluções</h4><ul>
+        <li><a href="#">Gestão Estratégica</a></li>
+        <li><a href="#">Gestão de Pessoas</a></li>
+        <li><a href="#">Processos</a></li>
+        <li><a href="#">Qualidade</a></li>
+        <li><a href="#">Tecnologia</a></li>
+        <li><a href="#">Saúde Corporativa</a></li>
+      </ul></div>
+      <div class="fc"><h4>Empresa</h4><ul>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Como trabalhamos</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Parceiros</a></li>
+      </ul></div>
+      <div class="fc"><h4>Contato</h4><ul>
+        <li><a href="mailto:contato@lajoscoelho.com.br">contato@lajoscoelho.com.br</a></li>
+        <li><a href="tel:+551199990000">+55 11 9 9999-0000</a></li>
+        <li><a href="#">São Paulo, SP</a></li>
+      </ul></div>
+    </div>
+    <div class="fb">
+      <p class="fcopy">© 2025 Lajos &amp; Coelho Gestão e Serviços. Todos os direitos reservados.</p>
+      <div class="fstatus">Sistema operacional</div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
