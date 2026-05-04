@@ -13,10 +13,24 @@ export function initHeroVideo() {
   hvTL.to('#hvbtns', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4');
   hvTL.to('#hvscroll', { opacity: 1, duration: 0.6 }, '-=0.2');
 
-  gsap.to('#hvVid', {
+  gsap.to('.hv-carousel', {
     y: '18%', ease: 'none',
     scrollTrigger: { trigger: '.hv-sec', scrub: 1, end: 'bottom top' }
   });
+
+  const slides = Array.from(document.querySelectorAll('[data-hv-slide]'));
+  if (slides.length > 1) {
+    slides.forEach(v => { v.play?.().catch(() => {}); });
+    let i = 0;
+    setInterval(() => {
+      const next = (i + 1) % slides.length;
+      slides[i].classList.remove('is-active');
+      slides[next].classList.add('is-active');
+      slides[next].currentTime = 0;
+      slides[next].play?.().catch(() => {});
+      i = next;
+    }, 4000);
+  }
 }
 
 export function initHeroSplit() {

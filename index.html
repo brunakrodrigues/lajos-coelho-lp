@@ -6,8 +6,10 @@
 <meta name="color-scheme" content="light"/>
 <meta name="theme-color" content="#F7FAFA"/>
 <title>Lajos &amp; Coelho — Gestão e Serviços</title>
-<link rel="preload" as="image" href="/assets/videos/hero-bg.jpg" fetchpriority="high"/>
-<link rel="preload" as="video" href="/assets/videos/hero-bg.mp4" type="video/mp4"/>
+<link rel="preload" as="video" href="/assets/videos/wellness.mp4" type="video/mp4"/>
+<link rel="prefetch" as="video" href="/assets/videos/welness2.mp4" type="video/mp4"/>
+<link rel="prefetch" as="video" href="/assets/videos/wellness3.mp4" type="video/mp4"/>
+<link rel="prefetch" as="video" href="/assets/videos/wellness4.mp4" type="video/mp4"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"/>
@@ -58,9 +60,20 @@
 
 <!-- HERO VIDEO -->
 <section class="hv-sec" id="top">
-  <video class="hv-vid" id="hvVid" autoplay muted loop playsinline preload="auto" poster="/assets/videos/hero-bg.jpg">
-    <source src="/assets/videos/hero-bg.mp4" type="video/mp4"/>
-  </video>
+  <div class="hv-carousel" id="hvCarousel">
+    <video class="hv-vid is-active" data-hv-slide autoplay muted loop playsinline preload="auto">
+      <source src="/assets/videos/wellness.mp4" type="video/mp4"/>
+    </video>
+    <video class="hv-vid" data-hv-slide muted loop playsinline preload="auto">
+      <source src="/assets/videos/welness2.mp4" type="video/mp4"/>
+    </video>
+    <video class="hv-vid" data-hv-slide muted loop playsinline preload="auto">
+      <source src="/assets/videos/wellness3.mp4" type="video/mp4"/>
+    </video>
+    <video class="hv-vid" data-hv-slide muted loop playsinline preload="auto">
+      <source src="/assets/videos/wellness4.mp4" type="video/mp4"/>
+    </video>
+  </div>
   <div class="hv-overlay"></div>
   <div class="hv-content">
     <div class="hv-tag">
